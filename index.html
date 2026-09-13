@@ -54,7 +54,7 @@ section{padding-top:clamp(84px,10vw,140px)}
 .hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.55) 0%,rgba(11,11,11,.15) 35%,rgba(11,11,11,.85) 100%)}
 .hero .swap{position:absolute;inset:0;opacity:0;transition:opacity .45s ease}
 .hero .swap.on{opacity:1}
-.hero .swap img{width:100%;height:100%;object-fit:cover}
+.hero .swap img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .hero .swap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(122,27,34,.35),rgba(11,11,11,.85))}
 .hero > *{position:relative;z-index:2}
 .hero .wrap{width:100%}
@@ -86,10 +86,12 @@ section{padding-top:clamp(84px,10vw,140px)}
 .stats figure{margin:0}
 .stats img{width:100%;border-radius:12px;border:1px solid var(--line)}
 .stats-note{margin-top:20px;font-size:15px;color:var(--mute)}
-.revs{margin-top:56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:clamp(24px,4vw,64px);align-items:start;border-top:1px solid var(--line);padding-top:32px}
+.revs{margin-top:56px;border-top:1px solid var(--line);padding-top:32px}
+.revs-txt{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px 40px;margin-bottom:24px}
 .revs-title{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.4vw,52px);line-height:1}
-.revs-txt p{margin-top:14px;color:var(--mute);font-size:16px;max-width:30ch}
+.revs-txt p{color:var(--mute);font-size:16px;max-width:36ch}
 .revs img{width:100%;border-radius:12px}
+.rev-tall{display:none}
 
 /* DIRECTIONS */
 .cards{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
@@ -195,8 +197,8 @@ section{padding-top:clamp(84px,10vw,140px)}
   .dir span{display:none}
   .grid{grid-template-columns:1fr 1fr;gap:24px 10px}
   .cards{grid-template-columns:1fr}
-  .revs{grid-template-columns:1fr}
-  .revs img{max-width:420px}
+  .rev-wide{display:none}
+  .rev-tall{display:block}
   .contact .h2{font-size:52px}
 }
 </style>
@@ -210,7 +212,7 @@ section{padding-top:clamp(84px,10vw,140px)}
   <div class="swap" id="swap"><img id="swapimg" src="assets/img/d_sde.jpg" alt=""></div>
 
   <div class="wrap hbar">
-    <span>Петербург · Уфа</span>
+    <span>Санкт-Петербург</span>
     <a href="https://t.me/c.hingiz">@c.hingiz</a>
   </div>
 
@@ -253,7 +255,8 @@ section{padding-top:clamp(84px,10vw,140px)}
         <h3 class="revs-title">Отзывы моих клиентов</h3>
         <p>Переписки после сдачи роликов, без правок и монтажа.</p>
       </div>
-      <img src="assets/img/revs.jpg" alt="Скриншоты отзывов клиентов в Telegram" loading="lazy">
+      <img class="rev-wide" src="assets/img/revs_h.jpg" alt="Скриншоты отзывов клиентов в Telegram" loading="lazy">
+      <img class="rev-tall" src="assets/img/revs.jpg" alt="Скриншоты отзывов клиентов в Telegram" loading="lazy">
     </div>
   </section>
 
@@ -264,11 +267,11 @@ section{padding-top:clamp(84px,10vw,140px)}
     <div class="grid">
       <figure class="work feature">
         <a class="frame" href="https://vkvideo.ru/video-38277591_456239520" target="_blank" rel="noopener"><img src="assets/img/w_podcast.jpg" alt="Съёмка видеоподкаста Бишбармак Show"><span class="play"></span></a>
-        <figcaption><h3>Бишбармак Show</h3><div class="meta">Видеоподкаст · съёмка</div><p>Студийная съёмка на несколько камер.</p></figcaption>
+        <figcaption><h3>Подкасты и интервью</h3><div class="meta">Съёмка на несколько камер</div><p>Студийная съёмка, свет и звук.</p></figcaption>
       </figure>
       <figure class="work">
         <a class="frame" href="https://disk.yandex.ru/i/8QvXrp5EqhjpHw" target="_blank" rel="noopener"><img src="assets/img/w_catering.jpg" alt="Десерт с логотипом кейтеринга"><span class="play"></span></a>
-        <figcaption><h3>Кейтеринг Айгуль Усмановой</h3><div class="meta">Reels · съёмка и монтаж</div><p>Рекламные ролики для соцсетей.</p></figcaption>
+        <figcaption><h3>Для бизнеса и брендов</h3><div class="meta">Reels · съёмка и монтаж</div><p>Рекламные ролики для соцсетей.</p></figcaption>
       </figure>
       <figure class="work">
         <a class="frame" href="https://disk.yandex.ru/i/aJ0IfszR8GQJ5w" target="_blank" rel="noopener"><img src="assets/img/w_concert.jpg" alt="Музыкант на сцене"><span class="play"></span></a>
@@ -298,7 +301,7 @@ section{padding-top:clamp(84px,10vw,140px)}
         <span class="kicker" style="color:#E8A3A8">2013 → сейчас</span>
         <h2>Мальчик под столом</h2>
         <p>В пятом классе я снял видео по английскому: актёры, кот, монтаж. Показал учителю <span class="wine">и залез под парту</span>, пока класс смотрел.</p>
-        <p>Я бы и дальше прятался под столом, просто не везде он есть.</p>
+        <p>Я бы и дальше прятался под партами, просто не везде они есть.</p>
       </div>
     </div>
   </section>
@@ -361,7 +364,8 @@ section{padding-top:clamp(84px,10vw,140px)}
 <script>
 const swap=document.getElementById('swap'),swapimg=document.getElementById('swapimg'),srcs={"d_sde": "assets/img/d_sde.jpg", "d_brands": "assets/img/d_brands.jpg", "d_people": "assets/img/d_people.jpg", "d_events": "assets/img/d_events.jpg", "d_pranks": "assets/img/d_pranks.jpg"};
 document.querySelectorAll('.dir').forEach(d=>{
-  const show=()=>{const k=d.dataset.img;if(srcs[k]){swapimg.src=srcs[k];swap.classList.add('on')}};
+  const pos={d_brands:'50% 14%',d_people:'50% 8%',d_events:'50% 22%',d_sde:'50% 30%',d_pranks:'50% 40%'};
+  const show=()=>{const k=d.dataset.img;if(srcs[k]){swapimg.src=srcs[k];swapimg.style.objectPosition=pos[k]||'50% 50%';swap.classList.add('on')}};
   const hide=()=>swap.classList.remove('on');
   d.addEventListener('mouseenter',show);d.addEventListener('focus',show);
   d.addEventListener('mouseleave',hide);d.addEventListener('blur',hide);
