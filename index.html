@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Чингиз — creator / videographer. SDE, Reels, события, видео-шоу</title>
+<meta name="description" content="Снимаю и монтирую Reels для брендов, SDE и видео-шоу на мероприятиях, съёмки людей и событий. Петербург и Уфа.">
+<style>
+@font-face{font-family:"Fira Extra";font-weight:700;font-display:swap;src:url("assets/fonts/fira-sans-extra-condensed-cyrillic-700-normal.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Fira Extra";font-weight:700;font-display:swap;src:url("assets/fonts/fira-sans-extra-condensed-latin-700-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Fira Extra";font-weight:800;font-display:swap;src:url("assets/fonts/fira-sans-extra-condensed-cyrillic-800-normal.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Fira Extra";font-weight:800;font-display:swap;src:url("assets/fonts/fira-sans-extra-condensed-latin-800-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Golos";font-weight:400;font-display:swap;src:url("assets/fonts/golos-text-cyrillic-400-normal.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Golos";font-weight:400;font-display:swap;src:url("assets/fonts/golos-text-latin-400-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Golos";font-weight:500;font-display:swap;src:url("assets/fonts/golos-text-cyrillic-500-normal.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Golos";font-weight:500;font-display:swap;src:url("assets/fonts/golos-text-latin-500-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Golos";font-weight:600;font-display:swap;src:url("assets/fonts/golos-text-cyrillic-600-normal.woff2") format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Golos";font-weight:600;font-display:swap;src:url("assets/fonts/golos-text-latin-600-normal.woff2") format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --paper:#F7F5F1;
+  --ink:#0B0B0B;
+  --mute:#6B6862;
+  --line:#DEDAD2;
+  --wine:#7A1B22;
+  --display:"Fira Extra","Arial Narrow","Roboto Condensed",sans-serif;
+  --text:"Golos","Helvetica Neue",Arial,sans-serif;
+  --pad:clamp(20px,4vw,48px);
+  --max:1320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--wine);outline-offset:3px}
+.wrap{max-width:var(--max);margin-left:auto;margin-right:auto;padding-left:var(--pad);padding-right:var(--pad)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:500;font-size:16px;padding:15px 26px;border-radius:999px;border:0;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:var(--wine)}
+.btn.light{background:var(--paper);color:var(--ink)}
+.btn.light:hover{background:var(--wine);color:var(--paper)}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(44px,6.4vw,92px);line-height:.92;letter-spacing:-.005em}
+.kicker{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--wine)}
+section{padding-top:clamp(84px,10vw,140px)}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(28px,3.5vw,48px)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* HERO */
+.hero{position:relative;height:100svh;min-height:560px;background:#0B0B0B;color:#fff;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.hero video,.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .vert{display:none}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.55) 0%,rgba(11,11,11,.15) 35%,rgba(11,11,11,.85) 100%)}
+.hero .swap{position:absolute;inset:0;opacity:0;transition:opacity .45s ease}
+.hero .swap.on{opacity:1}
+.hero .swap img{width:100%;height:100%;object-fit:cover}
+.hero .swap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(122,27,34,.35),rgba(11,11,11,.85))}
+.hero > *{position:relative;z-index:2}
+.hero .wrap{width:100%}
+.hbar{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-size:14px;letter-spacing:.02em}
+.hbar a{text-decoration:none;opacity:.85}
+.hbar a:hover{opacity:1}
+.hmid{padding-bottom:clamp(20px,3vw,36px);margin-top:auto}
+.hmid h1{font-family:var(--display);font-weight:800;font-size:clamp(72px,15vw,220px);line-height:.82;letter-spacing:-.02em}
+.hmid .role{font-family:var(--display);font-weight:700;font-size:clamp(14px,1.3vw,18px);letter-spacing:.24em;text-transform:uppercase;margin-top:14px;color:#D9D5CE}
+.hmid .sub{margin-top:18px;max-width:34ch;color:#D9D5CE;font-size:clamp(16px,1.4vw,19px)}
+.dirs{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid rgba(255,255,255,.25);padding-bottom:clamp(18px,3vw,30px)}
+.dir{flex:1 1 0;min-width:120px;padding:20px 14px 0 0;text-decoration:none;transition:color .25s;color:#fff}
+.dir + .dir{border-left:1px solid rgba(255,255,255,.18);padding-left:18px}
+.dir b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(24px,2.6vw,38px);line-height:1;letter-spacing:.01em}
+.dir span{display:block;font-size:13px;color:#B5B0A8;margin-top:8px}
+.dir:hover b{color:#fff}
+.dir:hover span{color:#E7B9BC}
+
+/* NUMBERS */
+.nums{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.num{padding:26px 16px 0 0}
+.num + .num{border-left:1px solid var(--line);padding-left:20px}
+.num b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(42px,5vw,76px);line-height:.9;letter-spacing:-.01em}
+.num span{display:block;font-size:15px;color:var(--mute);margin-top:12px;max-width:22ch}
+
+/* RESULTS */
+.res-lead{max-width:34ch;color:var(--mute);font-size:16px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stats figure{margin:0}
+.stats img{width:100%;border-radius:12px;border:1px solid var(--line)}
+.stats-note{margin-top:20px;font-size:15px;color:var(--mute)}
+.revs{margin-top:56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:clamp(24px,4vw,64px);align-items:start;border-top:1px solid var(--line);padding-top:32px}
+.revs-title{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.4vw,52px);line-height:1}
+.revs-txt p{margin-top:14px;color:var(--mute);font-size:16px;max-width:30ch}
+.revs img{width:100%;border-radius:12px}
+
+/* DIRECTIONS */
+.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.card{position:relative;grid-column:span 2;border-radius:14px;overflow:hidden;background:var(--ink);color:#fff;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(22px,2.4vw,32px);text-decoration:none;isolation:isolate}
+.card:nth-child(1),.card:nth-child(2){grid-column:span 3;min-height:420px}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .6s ease;filter:saturate(.95)}
+.card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(11,11,11,.15),rgba(11,11,11,.88))}
+.card:hover img{transform:scale(1.04)}
+.card h3{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.2vw,48px);line-height:1}
+.card p{font-size:15px;color:#D2CDC5;margin-top:10px;max-width:38ch}
+.card .tag{position:absolute;top:20px;left:clamp(22px,2.4vw,32px);font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--wine);padding:6px 12px;border-radius:999px}
+.card .go{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:15px;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:2px;align-self:flex-start}
+
+/* WORKS */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px 14px;grid-auto-flow:dense}
+.work{margin:0;display:flex;flex-direction:column}
+.work .frame{display:block;position:relative;border-radius:12px;overflow:hidden;aspect-ratio:9/16;background:#E6E2DA}
+.work .frame > img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.work:hover .frame > img{transform:scale(1.03)}
+.work.feature{grid-column:span 2;grid-row:span 2}
+.work.feature .frame{aspect-ratio:auto;flex:1 1 auto;min-height:0}
+.work.feature .frame > img{position:absolute;inset:0;object-position:50% 30%}
+.play{position:absolute;left:12px;bottom:12px;width:40px;height:40px;border-radius:50%;background:rgba(247,245,241,.94);display:grid;place-items:center}
+.play::before{content:"";margin-left:3px;border-left:11px solid var(--ink);border-top:7px solid transparent;border-bottom:7px solid transparent}
+.eps{position:absolute;right:10px;bottom:10px;display:flex;gap:6px}
+.eps img{width:60px;height:34px;border-radius:5px;border:2px solid #F7F5F1;object-fit:cover}
+.work figcaption{padding-top:12px}
+.work h3{font-size:17px;font-weight:600;line-height:1.3}
+.work .meta{font-size:13px;color:var(--wine);margin-top:4px;font-weight:500}
+.work p{font-size:14px;color:var(--mute);line-height:1.4;margin-top:3px}
+.bigcta{display:flex;flex-direction:column;gap:16px;margin-top:28px;margin-bottom:clamp(8px,2vw,24px);background:var(--ink);color:#F2EFE9;border-radius:14px;padding:clamp(28px,3.4vw,52px);text-decoration:none;transition:background .25s}
+.bigcta:hover{background:var(--wine)}
+.bigcta .ct{font-family:var(--display);font-weight:800;font-size:clamp(34px,4.4vw,68px);line-height:.98;max-width:14ch}
+.bigcta .cs{font-size:16px;color:#C9C4BC;max-width:42ch}
+.bigcta:hover .cs{color:#F0D9DA}
+.bigcta .cb{font-size:17px;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:3px;align-self:flex-start;margin-top:8px}
+.clients{margin-top:34px;font-size:16px;color:var(--ink);max-width:60ch}
+.clients b{color:var(--ink);font-weight:600}
+
+/* STORY */
+.story{background:var(--ink);color:#F2EFE9;padding:clamp(72px,9vw,128px) 0}
+.story .inner{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:clamp(28px,5vw,72px);align-items:center}
+.story h2{color:#fff}
+.story .then{aspect-ratio:4/3;border-radius:12px;overflow:hidden}
+.story .then img{width:100%;height:100%;object-fit:cover}
+.story p{font-size:clamp(19px,1.9vw,26px);line-height:1.35;margin-top:22px;max-width:32ch}
+.story .small{font-size:15px;color:#9A958D;margin-top:20px;max-width:44ch;line-height:1.5}
+.story .wine{color:#E8A3A8}
+
+/* PRICES */
+.prices{border-top:1px solid var(--ink)}
+.price{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,5fr) auto;gap:16px 32px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line)}
+.price h3{font-family:var(--display);font-weight:800;font-size:clamp(28px,3vw,44px);line-height:1}
+.price p{font-size:15px;color:var(--mute)}
+.price .val{font-family:var(--display);font-weight:800;font-size:clamp(26px,2.6vw,40px);white-space:nowrap;color:var(--wine)}
+.price .val small{font-family:var(--text);font-weight:500;font-size:14px;color:var(--mute);display:block;text-align:right}
+.note{margin-top:26px;color:var(--mute);font-size:15px}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:clamp(28px,5vw,72px);align-items:start}
+.about .photo{aspect-ratio:4/5;border-radius:12px;overflow:hidden}
+.about .photo img{width:100%;height:100%;object-fit:cover}
+.about p{font-size:clamp(17px,1.5vw,20px);max-width:40ch}
+.about p + p{margin-top:16px}
+.about h2{margin-bottom:24px}
+
+/* CONTACT */
+.contact{background:var(--wine);color:#FBF6F2;margin-top:clamp(84px,10vw,140px);padding:clamp(72px,9vw,128px) 0 40px}
+.contact h2{font-size:clamp(52px,8.5vw,132px);line-height:.88;max-width:11ch}
+.contact .lead{margin-top:24px;max-width:40ch;color:#F0D9DA;font-size:clamp(17px,1.5vw,20px)}
+.contact .actions{display:flex;flex-wrap:wrap;gap:18px 24px;align-items:center;margin-top:36px}
+.contact .link{text-underline-offset:5px;font-size:17px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:clamp(56px,7vw,100px);padding-top:20px;border-top:1px solid rgba(255,255,255,.22);font-size:14px;color:#E2BFC1}
+
+@media (max-width:980px){
+  .nums{grid-template-columns:1fr 1fr}
+  .num{padding:22px 12px 22px 0;border-bottom:1px solid var(--line)}
+  .num + .num{border-left:0;padding-left:0}
+  .num:nth-child(even){padding-left:20px;border-left:1px solid var(--line)}
+  .cards{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr}
+  .card,.card:nth-child(1),.card:nth-child(2){grid-column:span 1;min-height:300px}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .work.feature{grid-row:span 1}
+  .work.feature .frame{aspect-ratio:4/5;flex:none}
+  .story .inner{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}
+  .about .photo{max-width:420px}
+  .price{grid-template-columns:1fr auto;gap:8px 20px}
+  .price p{grid-column:1 / -1;order:3}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .hero{height:100svh}
+  .hero .horiz{display:none}
+  .hero .vert{display:block}
+  .hmid h1{font-size:clamp(64px,19vw,110px)}
+  .dirs{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}
+  .dirs::-webkit-scrollbar{display:none}
+  .dir{flex:0 0 auto;min-width:0;padding:16px 0 0}
+  .dir + .dir{padding-left:16px;margin-left:16px}
+  .dir b{font-size:22px}
+  .dir span{display:none}
+  .grid{grid-template-columns:1fr 1fr;gap:24px 10px}
+  .cards{grid-template-columns:1fr}
+  .revs{grid-template-columns:1fr}
+  .revs img{max-width:420px}
+  .contact .h2{font-size:52px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <video class="horiz" autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/img/ph.jpg"><source src="assets/hero_h.webm" type="video/webm"><source src="assets/hero_h.mp4" type="video/mp4"></video>
+  <video class="vert" autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/img/pv.jpg"><source src="assets/hero_v.webm" type="video/webm"><source src="assets/hero_v.mp4" type="video/mp4"></video>
+  <div class="shade"></div>
+  <div class="swap" id="swap"><img id="swapimg" src="assets/img/d_sde.jpg" alt=""></div>
+
+  <div class="wrap hbar">
+    <span>Петербург · Уфа</span>
+    <a href="https://t.me/c.hingiz">@c.hingiz</a>
+  </div>
+
+  <div class="wrap hmid">
+    <h1>Чингиз</h1>
+    <div class="role">Creator / Videographer</div>
+    <p class="sub">Снимаю и монтирую сам. Вы получаете не материал, а готовый контент.</p>
+  </div>
+
+  <div class="wrap dirs">
+    <a class="dir" href="https://disk.yandex.ru/d/qUk8E4riqbRlKg" target="_blank" rel="noopener" data-img="d_sde"><b>SDE</b><span>Видео в день события</span></a>
+    <a class="dir" href="#works" data-img="d_brands"><b>Бренды</b><span>Reels и реклама</span></a>
+    <a class="dir" href="#works" data-img="d_people"><b>Люди</b><span>Эксперты и блогеры</span></a>
+    <a class="dir" href="#works" data-img="d_events"><b>События</b><span>Свадьбы, концерты</span></a>
+    <a class="dir" href="https://disk.yandex.ru/d/LOqm16-zMSSFRA" target="_blank" rel="noopener" data-img="d_pranks"><b>Пранки</b><span>Видео-шоу на площадке</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="wrap reveal">
+    <div class="nums">
+      <div class="num"><b>Более 4 лет</b><span>опыта</span></div>
+      <div class="num"><b>50+</b><span>свадебных фильмов и счастливых пар</span></div>
+      <div class="num"><b>Более 100</b><span>спродюсированных и отснятых Reels</span></div>
+    </div>
+  </section>
+
+  <section class="wrap reveal" id="results">
+    <div class="head">
+      <div><span class="kicker">Что получает клиент</span><h2>Ролики,<br>которые смотрят</h2></div>
+      <p class="res-lead">Не «красиво сняли», а просмотры. Скриншоты статистики из аккаунтов, для которых я снимал.</p>
+    </div>
+    <div class="stats">
+      <figure><img src="assets/img/stats1.jpg" alt="Статистика Reels: 909 тысяч, 642 тысячи, 90,5 тысячи просмотров" loading="lazy"></figure>
+      <figure><img src="assets/img/stats2.jpg" alt="Статистика Reels: 210 тысяч, 142 тысячи, 64,7 тысячи просмотров" loading="lazy"></figure>
+    </div>
+    <p class="stats-note">Блогеры, автосалоны, салоны красоты и здоровья, кейтеринги и другие.</p>
+    <div class="revs">
+      <div class="revs-txt">
+        <h3 class="revs-title">Отзывы моих клиентов</h3>
+        <p>Переписки после сдачи роликов, без правок и монтажа.</p>
+      </div>
+      <img src="assets/img/revs.jpg" alt="Скриншоты отзывов клиентов в Telegram" loading="lazy">
+    </div>
+  </section>
+
+  <section class="wrap reveal">
+    <div class="head">
+      <h2>Работы</h2>
+    </div>
+    <div class="grid">
+      <figure class="work feature">
+        <a class="frame" href="https://vkvideo.ru/video-38277591_456239520" target="_blank" rel="noopener"><img src="assets/img/w_podcast.jpg" alt="Съёмка видеоподкаста Бишбармак Show"><span class="play"></span></a>
+        <figcaption><h3>Бишбармак Show</h3><div class="meta">Видеоподкаст · съёмка</div><p>Студийная съёмка на несколько камер.</p></figcaption>
+      </figure>
+      <figure class="work">
+        <a class="frame" href="https://disk.yandex.ru/i/8QvXrp5EqhjpHw" target="_blank" rel="noopener"><img src="assets/img/w_catering.jpg" alt="Десерт с логотипом кейтеринга"><span class="play"></span></a>
+        <figcaption><h3>Кейтеринг Айгуль Усмановой</h3><div class="meta">Reels · съёмка и монтаж</div><p>Рекламные ролики для соцсетей.</p></figcaption>
+      </figure>
+      <figure class="work">
+        <a class="frame" href="https://disk.yandex.ru/i/aJ0IfszR8GQJ5w" target="_blank" rel="noopener"><img src="assets/img/w_concert.jpg" alt="Музыкант на сцене"><span class="play"></span></a>
+        <figcaption><h3>Концерт</h3><div class="meta">Reels · съёмка и монтаж</div><p>Репетиция, выступление и зал в одном ролике.</p></figcaption>
+      </figure>
+      <figure class="work">
+        <a class="frame" href="https://disk.yandex.ru/i/rMQiFBhdA431rg" target="_blank" rel="noopener"><img src="assets/img/w_walk.jpg" alt="Девушка на улице"><span class="play"></span></a>
+        <figcaption><h3>Проходки</h3><div class="meta">Reels · съёмка и монтаж</div><p>Имиджевые вертикальные ролики.</p></figcaption>
+      </figure>
+      <figure class="work">
+        <a class="frame" href="https://disk.yandex.ru/i/hC3xn13UkxTNuw" target="_blank" rel="noopener"><img src="assets/img/w_love.jpg" alt="Пара в конфетти"><span class="play"></span></a>
+        <figcaption><h3>Лав-стори</h3><div class="meta">Съёмка для Happy Story Films</div><p>Постановочная съёмка пары.</p></figcaption>
+      </figure>
+    </div>
+    <p class="clients">Съёмка в том числе для Сергея Безрукова, Пелагеи, группы «Ленинград», Андрея Соколова, Полада Бюльбюль оглы, Лолы Астановой и так далее.</p>
+    <a class="bigcta" href="https://t.me/c.hingiz">
+      <span class="ct">Нужен похожий ролик?</span>
+      <span class="cs">Напишите, что нужно снять. Отвечу, сколько стоит и когда будет готово.</span>
+      <span class="cb">Написать в Telegram →</span>
+    </a>
+  </section>
+
+  <section class="story reveal">
+    <div class="wrap inner">
+      <div class="then"><img src="assets/img/story.jpg" alt="Чингиз в детстве"></div>
+      <div>
+        <span class="kicker" style="color:#E8A3A8">2013 → сейчас</span>
+        <h2>Мальчик под столом</h2>
+        <p>В пятом классе я снял видео по английскому: актёры, кот, монтаж. Показал учителю <span class="wine">и залез под парту</span>, пока класс смотрел.</p>
+        <p>Я бы и дальше прятался под столом, просто не везде он есть.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap reveal">
+    <div class="head">
+      <div><span class="kicker">Ориентир по бюджету</span><h2>Цены</h2></div>
+    </div>
+    <div class="prices">
+      <div class="price">
+        <h3>Reels</h3>
+        <p>Съёмка и монтаж вертикального ролика для соцсетей. Пакетом дешевле.</p>
+        <div class="val">от 4 000 ₽<small>за ролик</small></div>
+      </div>
+      <div class="price">
+        <h3>Съёмка события</h3>
+        <p>Свадьба, корпоратив, концерт, конференция. На выходе Reels и короткие ролики.</p>
+        <div class="val">от 12 000 ₽<small>за смену</small></div>
+      </div>
+      <div class="price">
+        <h3>SDE</h3>
+        <p>Монтаж на площадке, показ гостям в тот же вечер.</p>
+        <div class="val">от 30 000 ₽<small>за событие</small></div>
+      </div>
+      <div class="price">
+        <h3>Юмористический видео-пранк</h3>
+        <p>Интерактивный номер с участием гостей. Формат обсуждаем под сценарий вечера.</p>
+        <div class="val">от 12 000 ₽<small>за номер</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap about reveal">
+    <div class="photo"><img src="assets/img/me.jpg" alt="Чингиз"></div>
+    <div>
+      <span class="kicker">Кто снимает</span>
+      <h2>Обо мне</h2>
+      <p>Мне 22. Живу в Петербурге, учусь в СПбГУ на факультете журналистики.</p>
+      <p>До видео были сцена, актёрство и КВН. На площадке это работает напрямую: я объясняю героям, что делать в кадре, и вытаскиваю нужную реакцию.</p>
+      <p>Съёмку и монтаж веду сам, поэтому вы обсуждаете задачу с тем, кто её и делает.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Есть задача на видео?</h2>
+      <p class="lead">Напишите, что нужно снять, где и к какой дате. Отвечу, уточню детали и назову стоимость.</p>
+      <div class="actions">
+        <a class="btn light" href="https://t.me/c.hingiz">Написать в Telegram</a>
+        <a class="link" href="tel:+79625382518">+7 962 538-25-18</a>
+      </div>
+      <div class="foot">
+        <span>Чингиз · creator / videographer · Петербург</span>
+        <a href="#top">Наверх</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+const swap=document.getElementById('swap'),swapimg=document.getElementById('swapimg'),srcs={"d_sde": "assets/img/d_sde.jpg", "d_brands": "assets/img/d_brands.jpg", "d_people": "assets/img/d_people.jpg", "d_events": "assets/img/d_events.jpg", "d_pranks": "assets/img/d_pranks.jpg"};
+document.querySelectorAll('.dir').forEach(d=>{
+  const show=()=>{const k=d.dataset.img;if(srcs[k]){swapimg.src=srcs[k];swap.classList.add('on')}};
+  const hide=()=>swap.classList.remove('on');
+  d.addEventListener('mouseenter',show);d.addEventListener('focus',show);
+  d.addEventListener('mouseleave',hide);d.addEventListener('blur',hide);
+});
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
